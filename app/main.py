@@ -6,5 +6,5 @@ app = FastAPI(title="CultureCoach API")
 
 @app.post("/generate-lesson")
 def generate_lesson(request: LessonRequest):
-    lesson = generate_dummy_lesson(request)
+    lesson = generate_fake_lesson(request)
     return lesson
